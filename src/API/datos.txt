@@ -1,0 +1,27 @@
+
+baseURL: "https://apitransporte.buenosaires.gob.ar/colectivos/",
+client_id: "f27d35456f264142b061433b8f645314",
+client_secret: "26A20841565140deBd7dd568BEA2C63A"
+
+/feed-gtfs: devulve los datos en formato zip
+
+/vehiclePositionsSimple:
+    {
+    "route_id": "1632",
+    "latitude": -34.65069,
+    "longitude": -58.61436,
+    "speed": 0,
+    "timestamp": 1673450098,
+    "id": "1822",
+    "direction": 1,
+    "agency_name": "EMPRESA DE TRANSPORTE DEL SUR SRL",
+    "agency_id": 110,
+    "route_short_name": "506R2",
+    "tip_id": "111223-1",
+    "trip_headsign": null
+  }
+
+/vehiclePositions:
+{
+
+}
