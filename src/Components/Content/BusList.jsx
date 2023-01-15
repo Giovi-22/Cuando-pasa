@@ -2,15 +2,12 @@ import React, { useState } from "react";
 import { InputLabel, MenuItem, Select, Box } from "@mui/material";
 
 
-
 const BusList = ({buslist=[]})=>{
     const [busLine,setBusLine] = useState("");
 
     function handleChange(event){
         const {value} = event.target;
-        console.log(value)
         setBusLine(value)
-
     }
 
     return (
@@ -23,7 +20,7 @@ const BusList = ({buslist=[]})=>{
                 onChange={handleChange}
                 className="bus-selectStyle"
             >
-            {buslist.map((dato,index)=><MenuItem key={index} value={dato.value}>{dato.linea}</MenuItem>)}    
+            {buslist.map((dato,index)=><MenuItem key={index} value={index}>{dato}</MenuItem>)}    
             </Select> 
         </Box>
             );

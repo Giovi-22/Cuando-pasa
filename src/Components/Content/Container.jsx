@@ -9,7 +9,7 @@ const Container = ({datos=[]})=>{
 
     return(
         <Box className="main-container">
-            <BusList buslist={lineas}/>
+            <BusList buslist={datos}/>
             <BusStopContainer />
         </Box>
 

@@ -1,8 +1,9 @@
 import axios from "axios";
 
-let result = [];
+
 
 export async function getBusByStop(stop_id){
+        let result = [];
         try {
            result = await axios.get(`http://localhost:3005/paradas${stop_id}`);
            return result;
@@ -10,3 +11,12 @@ export async function getBusByStop(stop_id){
             throw error;
         }
     }
+export async function getBusLines(){
+    let result = []
+    try {
+        result = await axios.get("http://localhost:3005/buslines");
+        return result;
+    } catch (error) {
+        throw error;
+    }
+}
